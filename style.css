@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000000;
+}
+
+.frame {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+/* unvisited link */
+a:link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* selected link */
+a:active {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.text {
+  margin-bottom: 5px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #FFFFFF;
+
+  transition: 0.3s;
+}
+
+.text:hover {
+  text-shadow: 0px 0px 12px #FFFFFF;
+}
+
+.logo {
+  position: absolute;
+  width: 150px;
+  bottom: 20px;
+  right: 20px;
+}
