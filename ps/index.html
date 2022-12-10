@@ -1,0 +1,268 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/css" nonce="">#donate_banner, ia-anniversary-banner { display: none!important; }
+</style>
+
+
+  
+  <title>Removing shadows / Making tileable Textures</title>
+</head>
+<body text="#ffffff" bgcolor="#333333" link="#c0c0c0" vlink="#a08f74" alink="#c0c0c0"><!-- BEGIN WAYBACK TOOLBAR INSERT -->
+<style type="text/css">
+body {
+  margin-top:0 !important;
+  padding-top:0 !important;
+  /*min-width:800px !important;*/
+}
+</style>
+<b><font color="#ffffff"><font size="+1">Photoshop Tips</font></font></b>
+
+<br>
+<b><font color="#ffffff">Created On: </font></b><b><font color="#ffffff">Sept 25th
+2005</font></b><br>
+<b><font color="#ffffff">Updated On: </font></b><b><font color="#ffffff">Dec 14th 2005</font></b><br>
+<p>Here's a few photoshop tips related to making texture maps for 3d
+images. While there are plenty of tutorials out there discussing how to
+paint texture maps for games and film, this tutorial is not trying to
+be
+all encompassing, it's just a collection of tips that I've found people
+didn't know about that have always been really helpful to me, hopefully
+you find them helpful too.<br>
+</p>
+<b><font color="#ffffff"><font size="+1"></font></font></b><b><font color="#ffffff"><font size="+1">Using The Offset Filter To Make
+Tileable Textures</font></font></b>
+<p></p>
+<p>This is a pretty standard trick that most people know, but I do a
+slight variation that you may find useful.<br>
+</p>
+<p>Say you have
+a texture fragment like this (This is a photo I took at Lake Mead)...<br>
+</p>
+<p><img src="./index_files/offset1.jpg" title="" alt="Offset1" style="width: 400px; height: 400px;"><br>
+</p>
+<p>And you want to use it to tile (repeat) over a large surface.<br>
+</p>
+<p><img src="./index_files/offset2.jpg" title="" alt="Offset2" style="width: 800px; height: 800px;"><br>
+</p>
+<p>This of course doesn't look even remotely natural because you can
+see the seams (see the red arrows). So how to make the texture
+tileable?
+The first trick
+under your belt should be the offset filter. Take your original image,
+use the offset filter (make sure it's set to wrap around) and set it to
+half the size of your image, in this case, my image is 400x400 pixels,
+so set it to 200x200 pixels. You get this result.<br>
+</p>
+<p><img src="./index_files/offset3.jpg" title="" alt="Offset3" style="width: 400px; height: 400px;"><br>
+</p>
+<p>Now use the clone brush to clone parts of the rock overtop of the
+seam. You get this result...<br>
+</p>
+<p><img src="./index_files/offset4.jpg" title="" alt="Offset4" style="width: 400px; height: 400px;"><br>
+</p>
+<p>Now it tiles nicely with no obvious seams...<br>
+</p>
+<p><img src="./index_files/offset5.jpg" title="" alt="Offset5" style="width: 800px; height: 800px;"><br>
+</p>
+<p>This is a pretty standard technique, but one trick I like to mention
+is be careful which brush you use to do you cloning. If you use a brush
+that's too hard or too soft, you'll still have problems at the seams.
+For example,
+here's this hard brush...<br>
+</p>
+<p><img src="./index_files/brush1.jpg" title="" alt="Brush1" style="width: 343px; height: 80px;"><br>
+</p>
+<p>being used to clone this image (the image has been enlarged so we
+can see the details)...<br>
+</p>
+<p><img src="./index_files/brush2.jpg" title="" alt="Brush2" style="width: 300px; height: 300px;"><br>
+</p>
+<p>Here's the result, notice how it's slightly better, but you can see
+the hard edge of the brush...<br>
+</p>
+<p><img src="./index_files/brush3.jpg" title="" alt="Brush3" style="width: 300px; height: 300px;"><br>
+</p>
+<p>So the answer is usually use a soft edged brush, but that can also
+cause problems...<br>
+</p>
+<p><img src="./index_files/brush4.jpg" title="" alt="Brush4" style="width: 343px; height: 80px;"><br>
+</p>
+<p><img src="./index_files/brush5.jpg" title="" alt="Brush5" style="width: 300px; height: 300px;"><br>
+</p>
+<p>This is far better, but notice the details sort of fade into each
+other in the seam area. So you get this big blurry mess in the middle.
+This artifact is also be undesirable, so for
+my work I use a chaotically shaped hard/soft brush, which isn't too
+hard, isn't too soft, and is oddly shaped so that the eye can't pick up
+on the brush strokes...<br>
+</p>
+<p><img src="./index_files/brush6.jpg" title="" alt="Brush6" style="width: 60px; height: 60px;"><br>
+</p>
+<p>Also adjust the brushes parameters with a large "Angle Jitter", that
+way each brush stroke will have a different pattern (since the brush
+will be rotated a random value as you clone), and maybe some size
+jitter (although it's not necessary).<br>
+</p>
+<p><img src="./index_files/brush7.jpg" title="" alt="Brush7" style="width: 361px; height: 427px;"></p>
+<p>This gives far more realistic results when you blend the seam away.</p>
+<p><img src="./index_files/brush8.jpg" title="" alt="Brush8" style="width: 300px; height: 300px;"><br>
+</p>
+<p>Here's the image at regular resolution, no blurry mess, no hard
+edges...<br>
+</p>
+<p><img src="./index_files/brush9.jpg" title="" alt="Brush9" style="width: 100px; height: 100px;"><br>
+</p>
+<p><b><font color="#ffffff"><font size="+1">Cropping An Image That's
+Off
+The Canvas</font></font></b>
+</p>
+This happens to me a lot. Say you have an image that's 300x300 pixels...<br>
+<br>
+<img src="./index_files/crop1.jpg" title="" alt="Crop1" style="width: 300px; height: 300px;"><br>
+<br>
+And you want to add a new layer of dirt to it, and your image is
+500x500 pixels...<br>
+<br>
+<img src="./index_files/crop2.jpg" title="" alt="Crop2" style="width: 500px; height: 500px;"><br>
+<br>
+So a pretty standard thing to do is to drag the dirt layer onto your
+original image, and set the dirt layer to multiply...<br>
+<br>
+<img src="./index_files/crop3.jpg" title="" alt="Crop3" style="width: 300px; height: 300px;"><br>
+<br>
+But now lets say you decide to make this tileable. So you select your
+dirt layer and use the offset filter to offset the image 150x150 pixels
+(half the size of your 300x300 pixel image). Here's the result...<br>
+<br>
+<img src="./index_files/crop4.jpg" title="" alt="Crop4" style="width: 300px; height: 300px;"><br>
+<br>
+Where's the seam? Well, the reason you can't see the seam is because
+even though the canvas is 300x300 pixels, your dirt layer is actually a
+500x500 pixel image. You're only seeing 300x300 pixels of it. So the
+offset filter doesn't work the way you want it to. To make the dirt
+layer tileable, you need to crop the layer such that it's now only
+300x300 pixels. The way to do that is to do Select All on the image and
+then hit crop. This now cuts out everything that's not on the canvas.
+Now when you do your offset you'll see the results you expect, and then
+can use the clone brush to remove the seam.<br>
+<br>
+<img src="./index_files/crop5.jpg" title="" alt="Crop5" style="width: 300px; height: 300px;"><br>
+<p><b><font color="#ffffff"><font size="+1">Using The High Pass Filter
+To Make Tileable Textures<br>
+</font></font></b></p>
+<p>Say you have a texture fragment you want to make tileable, but it
+has
+some big areas of light or dark such as this...<br>
+</p>
+<p><img src="./index_files/highpass1.jpg" title="" alt="Highpass1" style="width: 400px; height: 400px;"><br>
+</p>
+<p>Notice how the lower left corner is really darker than the rest of
+the image. If we try the offset trick, we get this...<br>
+</p>
+<p><img src="./index_files/highpass2.jpg" title="" alt="Highpass2" style="width: 400px; height: 400px;"><br>
+</p>
+<p>This is going to be really hard to use the clone brush on, because
+the seam area is so different, one side is really dark and one side is
+really bright.</p>
+<p>This is where the high pass filter is useful. The high pass filter
+lets you remove large changes is brightness without removing the small
+changes in brightness. And that's what we're after here, we want the
+large changes in brightness to go away (the dark left corner), but we
+don't want to obliterate the small changes in brightness which are
+the cracks in the rock.<br>
+</p>
+<p>The procedure is like this, take your first image, duplicate it as a
+new layer. Then run the Filter -&gt; Other -&gt; High Pass on your
+duplicated layer. Play with the Radius until you've gotten rid of the
+dark corner, but still have the small rock cracks. For this example, I
+used a value of 28.0. Smaller values will remove the smaller details,
+whereas larger values only remove the large brightness changes.
+Experiment to find the ideal value for your particular image.<br>
+</p>
+<p><img src="./index_files/highpass3.jpg" title="" alt="Highpass3" style="width: 322px; height: 337px;"><br>
+</p>
+<p>This is the result of the filter...<br>
+</p>
+<p><img src="./index_files/highpass4.jpg" title="" alt="Highpass 4" style="width: 400px; height: 400px;"><br>
+</p>
+<p>Now take that duplicated layer and set the mode to Luminosity...<br>
+</p>
+<p><img src="./index_files/highpass5.jpg" title="" alt="Highpass5" style="width: 212px; height: 170px;"><br>
+</p>
+<p>The reason to do this is because the high pass filter can change the
+colors of your image pretty radically. For example, if you look at the
+image
+above, running the low pass filter on the background copy layer made
+the rock much
+yellower than the original rock. So you want to keep the color of your
+original image, but use the brightness information of your high pass
+filtered image, hence you set the layer to luminosity.<br>
+</p>
+<p>Now when you use offset on the result, it looks much better, and you
+can continue following the offset procedure above to remove the seam
+(Note: Before offseting, flatten your image, otherwise, you'll only
+offset your top layer instead of the combination of both layers.)<br>
+</p>
+<p><img src="./index_files/highpass6.jpg" title="" alt="Highpass6" style="width: 400px; height: 400px;"><br>
+</p>
+<p>For more information, here's a more in-depth article discussing the
+technique...<br>
+</p>
+<p><a href="https://web.archive.org/web/20060701213030/http://www.gamasutra.com/features/20010523/hajba_01.htm" target="_blank">Gamasutra - "The Power Of The High Pass Filter"</a><br>
+</p>
+<p><b><font color="#ffffff"><font size="+1">Additive Mode<br>
+</font></font></b></p>
+One thing that appears to be missing in Photoshop layers is an additive
+mode. The idea behind additive is that whatever color is in layer 1
+will be added to the color in layer 2 to get your final color. So for
+example, if you have a 25% grey color on layer 1, and a 50% grey color
+on layer 2, then the final color will be 75% grey, because 25% + 50% =
+75%. The is useful for bump maps, if say you're doing a lizard,
+and you have the scales of the lizard, and then on top of the scales
+you want a rough texture, you can take your scale bump map, and then
+add to it the rough bump map to achieve your final bump map.<br>
+<br>
+Anyways, Photoshop does in fact have an additive mode, sortof, it's
+called
+"Linear Dodge".<br>
+<br>
+<img src="./index_files/linear_dodge.jpg" title="" alt="Linear Dodge" style="width: 212px; height: 171px;"><br>
+<br>
+Why is it called "Linear Dodge" instead of "Additive"? Well, because
+it's only additive as long as you don't bring transparency into the
+equation.<br>
+<br>
+Look at the following diagrams made in photoshop. <br>
+<br>
+<img src="./index_files/lineardodge.jpg" title="" alt="Linear Dodge" style="width: 1170px; height: 335px;"><br>
+<br>
+The first diagram is 2 layers, the first is 25% grey, the second is 12%
+grey. The second is set to linear dodge. The color in the middle is 37%
+grey, which is what you'd expect. The same with the second diagram
+diagram. <br>
+<br>
+However, look what happens if you bring transparency into the equation.
+A white circle that's 50% transparent returns a color of 50% grey. Then
+you add that to a white circle with a transparency of 12% (which
+returns a color of 12% grey), and you get 56% grey? It should equal
+62%? Basically, if you use transparency on your layers (including the
+antialiased edge around anything on your layer), these return values
+that do not mathematically follow the additive rule. And that's why its
+called "Linear Dodge" instead of "Additive". <br>
+<br>
+Adobe AfterFx on the other hand has a true additive mode, which does a
+real mathematical add, even when dealing with transparency.<br>
+<br>
+So in practical terms, if you're not using transparency, "Linear Dodge"
+is an "Additive" mode. If you are using transparency, you won't get a
+mathematical add, but you'll get something close. So I can still
+recommend using "Linear Dodge" if you want to add two colors together
+in photoshop, just note you may not getting mathematically perfect
+results. Thanks to Tuomo Kulomaa for helping me with the transparency
+experiments above.
+
+
+
+
+
+
+
+</body></html>
